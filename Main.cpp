@@ -160,8 +160,19 @@ int main(){
 							playlists[numeroplaylist]->addCancion(canciones[numerocancion]);
 						}
 
-
-
+					}
+				}
+				if (selection2==2){
+					cout<<"playlists: "<<endl;
+					for (int i = 0; i < playlists.size(); i++){
+							cout<<" "<<i<<"-"<< playlists.at(i)->getName()<<" "<<endl;
+					}
+				}
+				if (selection2==3)
+				{
+					cout<<"Radios: "<<endl;
+					for (int i = 0; i < radios.size(); i++){
+							cout<<" "<<i<<"-"<< radios.at(i)->getNombreR()<<" "<<endl;
 					}
 				}
 
