@@ -1,11 +1,16 @@
 #include "Playlist.h"
 #include "Cancion.h"
 
-#include <vector>;
+#include <vector>
 using std::vector;
 
 #include <string>
 using std::string;
+
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
 
 Playlist::Playlist(){
 	name="playlist";
@@ -41,11 +46,11 @@ vector <Cancion*> Playlist::getLista(){
 	return lista;
 }
 
-void Playlist::setLista(vector <Cancion*>){
+void Playlist::setLista(vector <Cancion*> lista){
 	this->lista=lista;
 }
 
-void addCancion(Cancion e){
+void Playlist::addCancion(Cancion* e){
 	lista.push_back(e);
 }
 

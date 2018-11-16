@@ -1,11 +1,16 @@
 #include "Artista.h"
 #include "Cancion.h"
 
-#include <vector>;
+#include <vector>
 using std::vector;
 
 #include <string>
 using std::string;
+
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
 
 Artista::Artista(){
 	nombreA="None";
@@ -41,10 +46,10 @@ vector <Cancion*> Artista::getLista(){
 	return listaC;
 }
 
-void Artista::setLista(vector <Cancion*>){
+void Artista::setLista(vector <Cancion*> listaC){
 	this->listaC=listaC;
 }
 
-void Artista::addCanciones(Cancion e){
+void Artista::addCanciones(Cancion* e){
 	listaC.push_back(e);
 }

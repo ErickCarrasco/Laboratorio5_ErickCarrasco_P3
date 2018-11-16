@@ -3,6 +3,11 @@
 
 using std::string;
 
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
+
 Cancion::~Cancion(){
 	cout<<"Data eliminated"<<endl;
 }

@@ -1,4 +1,8 @@
 #include "Cancion.h"
+#include "Artista.h"
+#include "Playlist.h"
+#include "Radio.h"
+
 #include <iostream>
 using std::cin;
 using std::cout;

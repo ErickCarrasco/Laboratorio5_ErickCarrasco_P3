@@ -3,7 +3,7 @@
 
 #include "Cancion.h"
 
-#include <vector>;
+#include <vector>
 using std::vector;
 
 #include <string>
@@ -23,7 +23,7 @@ class Playlist{
 		void setDescripzione(string);
 		vector <Cancion*> getLista();
 		void setLista(vector <Cancion*>);
-		void addCancion(Cancion);
+		void addCancion(Cancion*);
 		~Playlist();
 
 	

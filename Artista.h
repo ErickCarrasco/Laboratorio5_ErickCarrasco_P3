@@ -5,7 +5,7 @@
 #include <string>
 using std::string;
 
-#include <vector>;
+#include <vector>
 using std::vector;
 
 class Artista{
@@ -22,7 +22,7 @@ class Artista{
 		void setNumerorep(int);
 		vector <Cancion*> getLista();
 		void setLista(vector <Cancion*>);
-		void addCanciones(Cancion);
+		void addCanciones(Cancion*);
 		~Artista();
 	
 };
