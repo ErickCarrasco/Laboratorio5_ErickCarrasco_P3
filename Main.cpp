@@ -24,7 +24,7 @@ int main(){
 	while(valueE==1){
 		cout<<"1/Agregar"<<endl;
 		cout<<"2/Mostrar y Agregar al playlist"<<endl;
-		cout<<"3/Radio"<<endl;
+		cout<<"3/Reproducir"<<endl;
 		cout<<"4/EXIT"<<endl;
 		int selection;
 		cout<<"Ingrese su seleccion: "<<endl;
@@ -118,10 +118,11 @@ int main(){
 			case 2:
 			{
 				cout<<"1/ Agregar al playlist"<<endl;
-				cout<<"2/ "<<endl;
-				cout<<"3/ "<<endl;
+				cout<<"2/ Mostrar playlists"<<endl;
+				cout<<"3/ Mostrar radios"<<endl;
 				int selection2;
 				cout<<"Ingrese su seleccion: "<<endl;
+				cin>>selection2;
 				while(selection2<0 || selection2>3){
 						cout<<"Fuera de rango, ingrese de nuevo el valor: "<<endl;
 						cin>>selection;
@@ -182,6 +183,39 @@ int main(){
 
 			case 3:
 				{
+					cout<<"1/ Reproducir cancion de playlist"<<endl;
+					int selection3;
+					cout<<"Ingrese su seleccion: "<<endl;
+					cin>>selection3;
+					while(selection3<0 || selection3>1){
+						cout<<"Fuera de rango, ingrese de nuevo el valor: "<<endl;
+						cin>>selection;
+
+					}
+					if (selection3==1){
+						cout<<"playlists: "<<endl;
+						for (int i = 0; i < playlists.size(); i++){
+							cout<<" "<<i<<"-"<< playlists.at(i)->getName()<<" "<<endl;
+						}
+						int seleccionplay;
+						cout<<"Ingrese el numero de playlist"<<endl;
+						bool validadorplay=true;
+						if (validadorplay<0 || validadorplay>playlists.size()){
+							cout<<"Out of bounds"<<endl;
+							validadorplay=false;
+						}
+
+						if (validadorplay==true){
+							/*
+							for (int i = 0; i < playlists.at(seleccionplay); ++i)
+							{
+								
+							}
+							*/
+						}
+
+						
+					}
 
 				}
 				break;
