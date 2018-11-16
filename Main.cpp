@@ -1,3 +1,4 @@
+#include "Cancion.h"
 #include <iostream>
 using std::cin;
 using std::cout;

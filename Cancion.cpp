@@ -3,6 +3,10 @@
 
 using std::string;
 
+Cancion::~Cancion(){
+	cout<<"Data eliminated"<<endl;
+}
+
 Cancion::Cancion(){
 	titulo = "Empty";
 	genero = "unknown";
